@@ -5,10 +5,10 @@ services:
     plan: free
     envVars:
       - key: SPRING_DATASOURCE_URL
-        value: jdbc:mysql://avnadmin:AVNS_9mhKncq5thL89mgD4M3@mysql-24c38741-hemanthpolisetti-0b86.l.aivencloud.com:12144/expensetracker?ssl-mode=REQUIRED
+        value: jdbc:mysql://mysql_db:3306/expense_tracker?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
       - key: SPRING_DATASOURCE_USERNAME
-        value: avnadmin
+        value: user
       - key: SPRING_DATASOURCE_PASSWORD
-        value: AVNS_9mhKncq5thL89mgD4M3
+        value: userpassword
     dockerfilePath: ./Dockerfile
     autoDeploy: true
