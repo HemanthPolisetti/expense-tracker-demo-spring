@@ -5,10 +5,10 @@ services:
     plan: free
     envVars:
       - key: SPRING_DATASOURCE_URL
-        value: jdbc:mysql://mysql_db:3306/expense_tracker?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
+        value: postgresql://expensetracker_59mr_user:kwoES61nzv1frFhltlnwD57AbpYqLgWv@dpg-cvdch3trie7s739nmha0-a.ohio-postgres.render.com/expensetracker_59mr
       - key: SPRING_DATASOURCE_USERNAME
-        value: user
+        value: expensetracker_59mr_user
       - key: SPRING_DATASOURCE_PASSWORD
-        value: userpassword
+        value: kwoES61nzv1frFhltlnwD57AbpYqLgWv
     dockerfilePath: ./Dockerfile
     autoDeploy: true
