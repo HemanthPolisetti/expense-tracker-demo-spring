@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: expense-tracker-api
+    env: docker
+    plan: free
+    envVars:
+      - key: SPRING_DATASOURCE_URL
+        value: jdbc:mysql://avnadmin:AVNS_9mhKncq5thL89mgD4M3@mysql-24c38741-hemanthpolisetti-0b86.l.aivencloud.com:12144/expensetracker?ssl-mode=REQUIRED
+      - key: SPRING_DATASOURCE_USERNAME
+        value: avnadmin
+      - key: SPRING_DATASOURCE_PASSWORD
+        value: AVNS_9mhKncq5thL89mgD4M3
+    dockerfilePath: ./Dockerfile
+    autoDeploy: true
